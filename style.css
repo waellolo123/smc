@@ -1,0 +1,666 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(247, 247, 247);
+  /* background: url(assets/engine2.png); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} 
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+}
+/* *******************navbar */
+nav {
+  width: 100%;
+  padding: 10px 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: fixed; */
+  /* top: 0; */
+  z-index: 100;
+}
+.navbar {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-link {
+  list-style-type: none;
+}
+.nav-link a {
+  text-decoration: none;
+  cursor: pointer;
+  color: lightgray;
+  position: relative;
+}
+/* #00CCD4 (blue sky)  #00012A (dark blue)*/
+.nav-link a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #00012A;
+    bottom: -5px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+.nav-link:hover a::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.logo {
+  width: 100px;
+  object-fit: cover;
+}
+.hamburger {
+  color: #00012A;
+  font-size: 2em;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  visibility: hidden;
+}
+.close {
+  color: #00012A;
+  font-size: 2em;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+/* *********************** section1 ****************************** */
+.section1 {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.349),rgba(0, 0, 0, 0.137)), url(assets/fence1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.section1-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  z-index: -1;
+}
+.hero-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  mix-blend-mode: over;
+}
+.bande {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #00012A;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+}
+.bande-title {
+  color: rgb(255, 255, 255);
+}
+.bande-title-spn {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.bande-para {
+  color: white;
+}
+.bande-icon {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+.bande-btn {
+  border: none;
+  padding: 10px;
+  background-color: white;
+  color: #00012A;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.section1-title {
+  color: rgb(255, 255, 255);
+  font-size: 6em;
+  background-color: rgba(255, 255, 255, 0.365);
+  padding: 10px 20px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.title-gray {
+  color: rgb(206, 206, 206);
+  font-weight: 500;
+}
+.title-red {
+  color: #00012A;
+  font-weight: 500;
+}
+.section1-slogan {
+  color: white;
+  letter-spacing: .1em;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.garage_section1-slogan {
+  color: rgb(255, 255, 255);
+  letter-spacing: .1em;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.5em;
+  text-align: center;
+}
+.section1-btn {
+  margin-top: 20px;
+  padding: 20px 60px;
+  font-size: 1.2em;
+  border: none;
+  color: white;
+  background-color: #00012A;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.section1-btn:hover {
+  background-color: #06073b;
+}
+.section1-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+/* background: linear-gradient(rgba(0,0,0,0.5), url(/assets/stylish-elegant-woman-car-salon.jpg)) */
+
+
+.img-header-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.img-header-container img {
+  width: 80%;
+}
+/* **************setction 2 ************************ */
+.section2 {
+  width: 100%;
+  
+}
+.section2-title {
+  color: #00012A;
+  font-size: 3em;
+  text-align: center;
+  margin: 20px 0;
+}
+.section2-container {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.card {
+  margin: 30px;
+  width: 300px;
+  padding-bottom: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 8px lightgray;
+  position: relative;
+}
+.card:hover .card-icon {
+  bottom: 30px;
+  transform: scale(1.2);
+  color: #00012A;
+
+}
+.card-icon {
+  position: absolute;
+  font-size: 2.5em;
+  color: white;
+  transition: .4s ease;
+  bottom: 180px;
+  left: 120px;
+}
+.card-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.card-bottom {
+  padding: 10px;
+}
+.card-title {
+  color: #00012A;
+  font-size: 1em;
+}
+.card-para {
+  color: lightgray;
+  margin-top: 10px;
+  line-height: 1.5em;
+  font-size: .9em;
+}
+/***************************** section 3 **************************/
+.section3 {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.section3-top{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section3-img {
+  width: 250px;
+}
+.section3-bottom{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section3-para {
+  color: gray;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 2em;
+  z-index: 10;
+}
+.section3-spn {
+  font-size: 5em;
+  color: #00012A;
+}
+/***************************** section 4 **************************/
+.section4 {
+  margin-top: 150px;
+  width: 100%;
+}
+.depannage {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.depannage-left {
+  width: 40%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.depannage-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.depannage-img1{
+  width: 80%;
+  height: 400px;
+  object-fit: cover;
+}
+.depannage-title {
+  color: #00012A;
+  text-align: center;
+}
+.depannage-para {
+  margin: 10px 0;
+  color: gray;
+  line-height: 1.5em;
+}
+.depannage-img2 {
+  width: 80%;
+  height: 400px;
+  object-fit: cover;
+}
+/* garage page */
+.garage_container {
+  width: 90%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.garage_wrapper {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.garage_card {
+  margin: 20px;
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 8px rgb(128, 128, 128);
+  overflow: hidden;
+}
+.garage_card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* **************************** section 5 ************************ */
+/* .section5 {
+  width: 100%;
+  height: 100vh;
+} */
+/* **************************** footer ************************ */
+.footer {
+  width: 100%;
+  padding: 50px;
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid lightgray;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.footer-link {
+  list-style-type: none;
+}
+.footer-link a {
+  text-decoration: none;
+  color: lightgray;
+  cursor: pointer;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+}
+.social-title {
+  color: #00012A;
+}
+.footer-icon {
+  color: #00012A;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.adress {
+  color: lightgray;
+}
+.griffe {
+  margin-top: 10px;
+  text-align: center;
+  font-size: .9em;
+  color: #00012A;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-img {
+  width: 150px;
+}
+.footer-slogan {
+  margin-top: 10px;
+  color: lightgray;
+}
+/* **************************** contact page ************************ */
+.section-contact {
+  padding: 50px;
+  background: linear-gradient(rgba(255, 255, 255, 0.901),rgba(255, 255, 255, 0.934)), url(/assets/garage2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-container {
+  /* margin-top: 100px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.contact-form {
+  width: 40%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 1px 1px 8px lightgray;
+}
+.texts-contact {
+  width: 40%;
+}
+.title-contact {
+  color: #06073b;
+}
+.para-contact {
+  margin-top: 10px;
+  color: gray;
+  line-height: 1.5em;
+  
+}
+form h2 {
+  color: lightgray;
+}
+.form-group {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid lightgray;
+}
+::placeholder {
+  color: lightgray;
+  opacity: .5;
+}
+label {
+  color: #06073b;
+}
+textarea {
+  margin-top: 5px;
+  outline: none;
+}
+select {
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #06073b;
+  color: #06073b;
+}
+form button {
+  padding: 10px;
+  border: 1px solid #06073b;
+  background-color: rgb(255, 255, 255);
+  color: #06073b;
+}
+/* **************************** Media queries ************************ */
+@media screen and (max-width: 1100px) {
+  .section1-title {
+    font-size: 3em;
+  }
+  .section1-slogan {
+    margin: 5px 0;
+    font-size: 1.2em;
+  }
+  .section1-btn {
+    padding: 15px 40px;
+    font-size: 1em;
+  }
+  .section2-container {
+    height: auto;
+
+  }
+  .section2-title {
+    font-size: 2em;
+  }
+  .section3-bottom {
+    width: 90%;
+  }
+  .section3-para {
+    font-size: 1em;
+  }
+  .depannage {
+    flex-direction: column;
+  }
+  .depannage-left {
+    width: 80%;
+  }
+  .depannage-right {
+    width: 80%;
+  }
+  .location {
+    flex-direction: column-reverse;
+  }
+  .section-contact {
+    padding: 20px;
+  }
+  .contact-container {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .texts-contact {
+    width: 90%;
+  }
+  .contact-form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .nav-list {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.804);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    bottom: 0;
+    left: -100%;
+    transition: .5s ease;
+  }
+  .show-nav {
+    left: 0;
+  }
+  .hamburger {
+    visibility: visible;
+  }
+  .bande {
+    display: none;
+  }
+  .depannage {
+    padding: 0;
+  }
+  .contact-form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section1-title {
+    font-size: 2.5em;
+  }
+  .section1-slogan {
+    font-size: 1em;
+  }
+  .section2-title {
+    font-size: 2em;
+  }
+  .section3-para {
+    font-size: 1em;
+  }
+  .depannage {
+    gap: 10px;
+  }
+  .depannage-para {
+    width: 100%;
+  }
+  .depannage-title {
+    font-size: 1.2em;
+  }
+  .location {
+    margin-top: 50px;
+  }
+  .contact-container {
+    padding: 0px;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}
+
+
+
+
+

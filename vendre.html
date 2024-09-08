@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <title>Espace-autos38</title>
+</head>
+<body>
+  <div id="container">
+    <!-- navbar -->
+    <nav>
+      <div class="navbar">
+        <a href="/" ><img src="assets/smc_logo1.png" alt="" class="logo"></a>
+        <ul class="nav-list">
+          <li class="nav-link"><a href="index.html">Acceuil</a></li>
+          <li class="nav-link"><a href="services.html">Nos Services</a></li>
+          <li class="nav-link"><a href="contact.html">Nous Contacter</a></li>
+        </ul>
+        <i class="fa-solid fa-bars hamburger"></i>
+        <i class="fa-solid fa-xmark close"></i>
+      </div>
+    </nav>
+      <!-- contact form -->
+      <div class="section-contact">
+        <div class="contact-container">
+          <form class="contact-form" action="https://formspree.io/f/mbjnbqlb"
+          method="POST">
+            <h2>Vendez votre voiture</h2>
+            <div class="form-group">
+              <label>Votre numéro de tel</label>
+              <input name="tel" type="text" placeholder="Numéro de téléphone">
+            </div>
+            <div class="form-group">
+              <label>Marque</label>
+              <input name="marque" type="text" placeholder="La marque de votre voiture">
+            </div>
+            <div class="form-group">
+              <label>Model</label>
+              <input name="model" type="text" placeholder="le model de votre voiture">
+            </div>
+            <div class="form-group">
+              <label>lien vers images</label>
+              <input name="lien-image" type="text" placeholder="le lien vers les images de votre voiture">
+            </div>
+            <div class="form-group">
+              <label>Date de mise en circulation</label>
+              <input name="date_circulation" type="date" placeholder="la date de mise en circulation">
+            </div>
+            <div class="form-group">
+              <label>Energie</label>
+              <select name="energie">
+                <option value="">Selectionnez le type d'énérgie</option>
+                <option value="Esscence">Esscence</option>
+                <option value="Gazoil">Gazoil</option>
+                <option value="Eléctrique">Eléctrique</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Informations supplémentaires</label>
+              <textarea name="description" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit">Envoyer</button>
+          </form>
+          <div class="texts-contact">
+            <h2 class="title-contact">Vous Voulez Vendre Votre Voiture?</h2>
+            <p class="para-contact">Vous cherchez à louer ou vendre votre voiture? Espace Autos 38 est là pour vous aider! Nous sommes une entreprise de confiance qui se spécialise dans la location et la vente de voitures. Nous offrons des prix compétitifs et un service client exceptionnel. Si vous cherchez à louer ou vendre votre voiture, n’hésitez pas à nous contacter. Nous sommes là pour vous aider!”
+
+              Si vous souhaitez un texte plus long, voici une version plus détaillée:
+              
+              "Chez Espace Autos 38, nous sommes passionnés par les voitures et nous sommes fiers de fournir des services de location et de vente de voitures de qualité supérieure. Nous avons une large sélection de voitures disponibles à la location ou à la vente, allant des modèles économiques aux modèles haut de gamme. Nous sommes convaincus que nous avons la voiture parfaite pour répondre à vos besoins.
+              
+              Nous sommes également fiers d’offrir des prix compétitifs et un service client exceptionnel. Notre équipe est composée d’experts en automobiles qui sont là pour vous aider à trouver la voiture qui convient le mieux à vos besoins et à votre budget. Nous sommes là pour répondre à toutes vos questions et pour vous aider tout au long du processus.
+              
+              Si vous cherchez à louer ou vendre votre voiture, n’hésitez pas à nous contacter. Nous sommes là pour vous aider! Vous pouvez nous contacter par téléphone, par e-mail ou en remplissant le formulaire de contact sur notre site Web. Nous sommes impatients de travailler avec vous.</p>
+          </div>
+        </div>
+      </div>
+     <!-- footer -->
+     <div class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="assets/smc_logo1.png" alt="" class="footer-img">
+          <p class="footer-slogan">Espace Autos 38 à votre service</p>
+          <p class="griffe">&copy; 2023 Wael Latrache All rights reserved</p>
+        </div>
+       <div class="socials">
+        <div class="icons">
+          <i class="fa-brands fa-youtube footer-icon"></i>
+          <i class="fa-brands fa-facebook footer-icon"></i>
+          <a href="mailto:Espace.auto38@gmail.com"><i class="fa-solid fa-envelope footer-icon"></i></a>
+          <i class="fa-brands fa-square-instagram footer-icon"></i>
+        </div>
+        <p class="adress">19 rue Col Dumont 
+           Grenoble</p>
+        <p class="adress">cedex 38000</p>
+        <p class="adress">tel: +33 6 29 44 31 52</p>
+       </div>
+       <div class="footer-links">
+        <ul class="footer-list">
+          <li class="footer-link"><a href="index.html">Acceuil</a></li>
+          <li class="footer-link"><a href="services.html">Nos Services</a></li>
+          <li class="footer-link"><a href="contact.html">Nous Contacter</a></li>
+          <li class="footer-link"><a href="contact.html">Vendez Votre Voiture</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="main.js"></script>
+</html>
