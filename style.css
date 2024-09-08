@@ -29,7 +29,6 @@ nav {
   justify-content: center;
   /* position: fixed; */
   /* top: 0; */
-  z-index: 100;
 }
 .navbar {
   width: 90%;
@@ -82,14 +81,16 @@ nav {
   right: 0;
   cursor: pointer;
   visibility: hidden;
+  z-index: 101;
 }
 .close {
-  color: #00012A;
+  color: #ffffff;
   font-size: 2em;
   position: absolute;
   right: 0;
   cursor: pointer;
   visibility: hidden;
+  z-index: 101;
 }
 
 /* *********************** section1 ****************************** */
@@ -610,13 +611,14 @@ form button {
     bottom: 0;
     left: -100%;
     transition: .5s ease;
-    z-index: 100;
+    z-index: 99;
   }
   .show-nav {
     left: 0;
   }
   .hamburger {
     visibility: visible;
+    z-index: 102;
   }
   .bande {
     display: none;
